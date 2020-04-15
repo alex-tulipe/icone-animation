@@ -1,0 +1,67 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+svg{
+    width: 500px;
+}
+
+#wing-right{
+    animation: wing-right 2s infinite alternate;
+    transform-box: fill-box;
+    
+}
+
+@keyframes wing-right{
+    from{
+        transform: translateY(-10px);
+    }to{
+        transform: translateY(10px);
+        transform: rotatex(20deg);
+    }
+}
+ 
+#wing-left{
+    animation: wing-left 2s infinite alternate;
+    transform-box: fill-box;
+    
+}
+
+@keyframes wing-left{
+    from{
+        transform: translateY(-10px);
+    }to{
+        transform: translateY(10px);
+        transform: rotateX(20deg);
+    }
+}
+
+#eyes1{
+    animation: Ellipse 1 2s infinite alternate;
+    transform-box: fill-box;
+}
+
+@keyframes eyes1{
+    from{
+        transform: rotateX(0deg);
+    }to{
+        transform: rotateX(20deg);
+    }
+}
+
+#eyes2{
+    animation: wing-left 2s infinite alternate;
+    transform-box: fill-box;
+}
+
+@keyframes eyes1{
+    from{
+        transform: rotateX(0deg);
+    }to{
+        transform: rotateX(20deg);
+    }
+}
